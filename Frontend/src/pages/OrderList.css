@@ -1,0 +1,86 @@
+.ol-page { padding: 24px 40px; }
+.ol-top { display: flex; justify-content: space-between; align-items: flex-start; }
+.ol-top h1 { font-family: "Cormorant Garamond", serif; font-size: 34px; margin: 0; }
+.ol-sub { color: #7a6a5c; font-size: 14px; margin: 4px 0 20px; }
+
+.ol-new {
+  background: #a0522d; color: #fff; text-decoration: none; font-weight: 600;
+  font-size: 13px; padding: 10px 16px; border-radius: 8px;
+}
+
+.ol-filters { display: flex; gap: 10px; margin-bottom: 16px; flex-wrap: wrap; }
+.ol-filters input, .ol-filters select {
+  border: 1px solid #e0d6c5; background: #fffdf8; border-radius: 8px;
+  padding: 10px 12px; font: inherit; font-size: 13px;
+}
+.ol-search { width: 270px; }
+
+.ol-card {
+  background: #fffdf8; border: 1px solid #ebe3d5; border-radius: 14px;
+  overflow-x: auto;
+}
+.ol-table { width: 100%; border-collapse: collapse; font-size: 14px; }
+.ol-table th {
+  text-align: left; font-size: 11px; font-weight: 600; letter-spacing: 0.05em;
+  text-transform: uppercase; color: #8a7b6a; padding: 14px 16px;
+  background: #f8f3e9; border-bottom: 1px solid #ebe3d5;
+}
+.ol-table th.right { text-align: right; }
+.ol-empty { text-align: center; color: #8a7b6a; padding: 40px 16px; font-size: 13px; }
+.ol-error {
+  background: #f6d9d9; color: #8a2a2a; padding: 10px 14px;
+  border-radius: 8px; margin-bottom: 16px; font-size: 14px;
+}
+.ol-table td { padding: 13px 16px; border-bottom: 1px solid #f0e9db; }
+.ol-table tr:last-child td { border-bottom: none; }
+.ol-table td.right { text-align: right; }
+.ol-area { color: #8a7b6a; }
+.ol-open { color: #5a3a28; text-decoration: none; font-weight: 500; }
+.ol-open:hover { text-decoration: underline; }
+
+.ol-badge { padding: 3px 10px; border-radius: 999px; font-size: 11px; font-weight: 600; }
+.ol-badge.pending { background: #ece5da; color: #6b5a48; }
+.ol-badge.sent, .ol-badge.preparing { background: #fbe9c6; color: #8a5a00; }
+.ol-badge.ready { background: #d6efe2; color: #1d5a3a; }
+.ol-badge.served { background: #ebe0c4; color: #6b5420; }
+.ol-badge.cancelled { background: #f6d9d9; color: #8a2a2a; }
+.od-error {
+  background: #f6d9d9; color: #8a2a2a; padding: 10px 14px;
+  border-radius: 8px; margin-bottom: 16px; font-size: 14px;
+}
+.od-card { margin-bottom: 16px; }
+
+.od-list { list-style: none; margin: 0; padding: 0; }
+.od-list li {
+  display: flex; justify-content: space-between; align-items: center; gap: 8px;
+  padding: 12px 8px; border-bottom: 1px solid #f0e9db; font-size: 14px; cursor: pointer;
+}
+.od-list li:last-child { border-bottom: none; }
+.od-list li:hover, .od-list li.active { background: #f8f3e9; }
+.od-right { display: flex; align-items: center; gap: 8px; }
+.od-right small { color: #8a7b6a; }
+
+.od-badge { padding: 3px 10px; border-radius: 999px; font-size: 11px; font-weight: 600; }
+.od-badge.pending { background: #ece5da; color: #6b5a48; }
+.od-badge.sent, .od-badge.preparing { background: #fbe9c6; color: #8a5a00; }
+.od-badge.ready { background: #d6efe2; color: #1d5a3a; }
+.od-badge.served { background: #ebe0c4; color: #6b5420; }
+.od-badge.cancelled { background: #f6d9d9; color: #8a2a2a; }
+
+.od-detail-top { display: flex; justify-content: space-between; align-items: flex-start; }
+.od-detail h2 { margin: 0; font-family: "Cormorant Garamond", serif; font-size: 26px; }
+.od-detail p { margin: 2px 0 0; color: #7a6a5c; }
+
+.od-info { display: grid; grid-template-columns: repeat(5, 1fr); gap: 12px; margin: 16px 0; }
+.od-info small, .od-note small { display: block; color: #8a7b6a; font-size: 11px; text-transform: uppercase; }
+.od-info span { font-size: 14px; }
+.od-note { background: #f8f3e9; border-radius: 8px; padding: 10px 12px; margin-bottom: 14px; }
+
+.od-items { width: 100%; border-collapse: collapse; font-size: 14px; }
+.od-items th {
+  text-align: left; font-size: 11px; text-transform: uppercase; color: #8a7b6a;
+  padding: 8px 0; border-bottom: 1px solid #ebe3d5;
+}
+.od-items td { padding: 9px 0; border-bottom: 1px solid #f0e9db; }
+.od-items .right { text-align: right; }
+.od-total { display: flex; justify-content: space-between; padding-top: 12px; font-size: 16px; }

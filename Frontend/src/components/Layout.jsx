@@ -13,6 +13,8 @@ export default function Layout() {
         <nav className="nav">
           <NavLink to="/dashboard">Dashboard</NavLink>
           <NavLink to="/orders/new">New Order</NavLink>
+          <NavLink to="/orders" end>Order List</NavLink>
+          <NavLink to="/orders/details">Order Details</NavLink>
         </nav>
 
         <div className="user-box">

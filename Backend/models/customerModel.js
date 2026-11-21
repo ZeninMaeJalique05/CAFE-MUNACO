@@ -8,13 +8,16 @@ const TIME_COLUMN = {
 };
 
 export const findOrders = async (status) => {
-  let sql = "SELECT *, order_no AS order_number FROM orders";
+  let sql = `
+    SELECT o.*, o.order_no AS order_number,
+           COALESCE((SELECT SUM(oi.quantity) FROM order_items oi WHERE oi.order_id = o.id), 0) AS items_count
+    FROM orders o`;
   const params = [];
   if (status) {
-    sql += " WHERE status = ?";
+    sql += " WHERE o.status = ?";
     params.push(status);
   }
-  sql += " ORDER BY created_at DESC";
+  sql += " ORDER BY o.created_at DESC";
   const [rows] = await db.query(sql, params);
   return rows;
 };
